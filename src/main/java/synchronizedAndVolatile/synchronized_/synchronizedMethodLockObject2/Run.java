@@ -1,4 +1,4 @@
-package synchronizedAndVolatile.synchronizedMethodLockObject2;
+package synchronizedAndVolatile.synchronized_.synchronizedMethodLockObject2;
 
 /**
  * Created by xianpeng.xia

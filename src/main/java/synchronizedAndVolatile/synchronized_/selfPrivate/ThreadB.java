@@ -1,4 +1,4 @@
-package synchronizedAndVolatile.selfPrivate;
+package synchronizedAndVolatile.synchronized_.selfPrivate;
 
 /**
  * Created by xianpeng.xia

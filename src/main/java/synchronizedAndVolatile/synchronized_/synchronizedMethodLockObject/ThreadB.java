@@ -1,14 +1,14 @@
-package synchronizedAndVolatile.synchronizedMethodLockObject;
+package synchronizedAndVolatile.synchronized_.synchronizedMethodLockObject;
 
 /**
  * Created by xianpeng.xia
  * on 2019-06-07 15:20
  */
-public class ThreadA extends Thread {
+public class ThreadB extends Thread {
 
     private MyObject myObject;
 
-    public ThreadA(MyObject myObject) {
+    public ThreadB(MyObject myObject) {
         super();
         this.myObject = myObject;
     }
