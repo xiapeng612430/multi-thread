@@ -6,8 +6,9 @@ package threadOrRunnable.stopThread.stopThrowLock;
  */
 public class SynchrobnizedObject {
 
-    private String username;
-    private String password;
+    private String username = "a";
+    private String password = "aa";
+
 
     public String getUsername() {
         return username;
