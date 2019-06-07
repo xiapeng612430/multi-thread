@@ -1,4 +1,4 @@
-package stopThread;
+package threadOrRunnable.stopThread;
 
 /**
  * Created by xianpeng.xia

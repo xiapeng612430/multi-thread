@@ -1,4 +1,4 @@
-package getId;
+package threadOrRunnable.getId;
 
 /**
  * Created by xianpeng.xia

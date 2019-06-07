@@ -1,4 +1,4 @@
-package sleep;
+package threadOrRunnable.sleep;
 
 /**
  * Created by xianpeng.xia
