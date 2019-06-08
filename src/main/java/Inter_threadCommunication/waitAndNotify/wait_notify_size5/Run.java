@@ -11,7 +11,7 @@ public class Run {
             Object lock = new Object();
             ThreadB waitThread = new ThreadB(lock);
             waitThread.start();
-            Thread.sleep(50);
+            Thread.sleep(500);
             ThreadA notifyThread = new ThreadA(lock);
             notifyThread.start();
 
