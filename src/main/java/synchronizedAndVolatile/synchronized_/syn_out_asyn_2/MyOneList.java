@@ -1,4 +1,4 @@
-package synchronizedAndVolatile.synchronized_.syn_out_asun_2;
+package synchronizedAndVolatile.synchronized_.syn_out_asyn_2;
 
 import java.util.ArrayList;
 import java.util.List;

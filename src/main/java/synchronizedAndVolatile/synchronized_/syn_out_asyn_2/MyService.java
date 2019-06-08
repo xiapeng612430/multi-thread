@@ -1,10 +1,10 @@
-package synchronizedAndVolatile.synchronized_.syn_out_asun_2;
+package synchronizedAndVolatile.synchronized_.syn_out_asyn_2;
 
 /**
  * Created by xianpeng.xia
  * on 2019-06-08 12:20
  */
-public class Myservice {
+public class MyService {
 
     public MyOneList addServiceMethod(MyOneList list, String data) {
         try {

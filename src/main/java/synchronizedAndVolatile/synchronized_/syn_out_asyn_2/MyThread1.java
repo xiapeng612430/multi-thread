@@ -1,4 +1,4 @@
-package synchronizedAndVolatile.synchronized_.syn_out_asun_2;
+package synchronizedAndVolatile.synchronized_.syn_out_asyn_2;
 
 /**
  * Created by xianpeng.xia
@@ -15,7 +15,7 @@ public class MyThread1 extends Thread {
 
     @Override
     public void run() {
-        Myservice myservice = new Myservice();
+        MyService myservice = new MyService();
         myservice.addServiceMethod(list,"A");
     }
 }
