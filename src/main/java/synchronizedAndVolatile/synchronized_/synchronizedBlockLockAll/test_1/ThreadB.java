@@ -1,4 +1,4 @@
-package synchronizedAndVolatile.synchronized_.synchronizedBlockLockAll;
+package synchronizedAndVolatile.synchronized_.synchronizedBlockLockAll.test_1;
 
 /**
  * Created by xianpeng.xia
