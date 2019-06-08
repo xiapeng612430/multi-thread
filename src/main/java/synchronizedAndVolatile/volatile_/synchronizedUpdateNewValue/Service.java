@@ -9,10 +9,12 @@ public class Service {
     private boolean isContinueRun = true;
 
     public void runMethod() {
+        String anyString = new String();
         while (isContinueRun == true) {
-
+            synchronized (anyString) {
+            }
         }
-        System.out.println("can not stop");
+        System.out.println("stopped");
     }
 
     public void stopMethod() {
