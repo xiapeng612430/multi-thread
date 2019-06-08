@@ -6,16 +6,24 @@ package synchronizedAndVolatile.synchronized_.twoStop;
  */
 public class Service {
 
-    synchronized public void methodA() {
-        System.out.println("methodA begin");
-        boolean isContinueRun = true;
-        while (isContinueRun) {
+    private Object object1 = new Object();
+
+    public void methodA() {
+        synchronized (object1) {
+            System.out.println("methodA begin");
+            boolean isContinueRun = true;
+            while (isContinueRun) {
+            }
+            System.out.println("methodA end");
         }
-        System.out.println("methodA end");
     }
 
-    synchronized public void methodB() {
-        System.out.println("methodB begin");
-        System.out.println("methodB end");
+    private Object object2 = new Object();
+
+    public void methodB() {
+        synchronized (object2) {
+            System.out.println("methodB begin");
+            System.out.println("methodB end");
+        }
     }
 }
