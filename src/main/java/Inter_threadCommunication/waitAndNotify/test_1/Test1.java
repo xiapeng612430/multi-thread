@@ -1,4 +1,4 @@
-package Inter_threadCommunication.waitAndNotify;
+package Inter_threadCommunication.waitAndNotify.test_1;
 
 /**
  * Created by xianpeng.xia
