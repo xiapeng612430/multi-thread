@@ -10,7 +10,7 @@ public class MyService {
 
     public static AtomicLong sum = new AtomicLong();
 
-    public void addSum() {
+    synchronized public void addSum() {
         System.out.println(Thread.currentThread().getName() + " add 100 and then sum = " + sum.addAndGet(100));
         sum.addAndGet(1);
     }

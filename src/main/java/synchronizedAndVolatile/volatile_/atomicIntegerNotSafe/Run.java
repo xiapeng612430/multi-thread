@@ -1,6 +1,5 @@
 package synchronizedAndVolatile.volatile_.atomicIntegerNotSafe;
 
-import synchronizedAndVolatile.synchronized_.synBlockMoreObjectOneLock.Service;
 
 /**
  * Created by xianpeng.xia
