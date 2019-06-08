@@ -6,7 +6,7 @@ package synchronizedAndVolatile.volatile_.extThread;
  */
 public class RunThread extends Thread {
 
-    private boolean isRunning = true;
+   volatile private boolean isRunning = true;
 
     public boolean isRunning() {
         return isRunning;
