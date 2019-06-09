@@ -1,4 +1,4 @@
-package Inter_threadCommunication.waitAndNotify.stack_2_old;
+package Inter_threadCommunication.waitAndNotify.stack_2;
 
 import java.util.ArrayList;
 import java.util.List;
