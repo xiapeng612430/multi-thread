@@ -7,14 +7,17 @@ package Inter_threadCommunication.waitAndNotify.firstNotify;
 public class MyRun {
 
     private String lock = new String("");
+    private boolean isFirstRunB = false;
     private Runnable runnableA = new Runnable() {
         @Override
         public void run() {
             try {
                 synchronized (lock) {
-                    System.out.println("begin wait");
-                    lock.wait();
-                    System.out.println("end   wait");
+                    while (isFirstRunB == false) {
+                        System.out.println("begin wait");
+                        lock.wait();
+                        System.out.println("end   wait");
+                    }
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -29,6 +32,7 @@ public class MyRun {
                 System.out.println("begin notify");
                 lock.notify();
                 System.out.println("end   notify");
+                isFirstRunB = true;
             }
         }
     };
