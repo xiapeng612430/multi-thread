@@ -17,6 +17,8 @@ public class NotifyThread extends Thread {
     public void run() {
         synchronized (lock) {
             lock.notify();
+            lock.notify();
+            lock.notify();
         }
     }
 }
