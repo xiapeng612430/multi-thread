@@ -17,7 +17,7 @@ public class MyStack {
                 this.wait();
             }
             list.add("anyString = " + Math.random());
-            this.notify();
+            this.notifyAll();
             System.out.println("push=" + list.size());
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -33,7 +33,7 @@ public class MyStack {
             }
             returnString = list.get(0) + "";
             list.remove(0);
-            this.notify();
+            this.notifyAll();
             System.out.println("pop=" + list.size());
         } catch (InterruptedException e) {
             e.printStackTrace();
