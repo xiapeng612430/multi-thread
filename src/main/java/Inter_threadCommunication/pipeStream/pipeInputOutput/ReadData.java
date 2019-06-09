@@ -1,4 +1,4 @@
-package Inter_threadCommunication.pipeStream.pipeInputStream;
+package Inter_threadCommunication.pipeStream.pipeInputOutput;
 
 import java.io.IOException;
 import java.io.PipedInputStream;
