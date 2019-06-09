@@ -39,10 +39,10 @@ public class MyRun {
 
     public static void main(String[] args) throws InterruptedException {
         MyRun run = new MyRun();
-        Thread b = new Thread(run.runnableB);
-        b.start();
-        Thread.sleep(100);
         Thread a = new Thread(run.runnableA);
         a.start();
+        Thread.sleep(100);
+        Thread b = new Thread(run.runnableB);
+        b.start();
     }
 }
