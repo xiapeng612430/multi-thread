@@ -1,4 +1,4 @@
-package Inter_threadCommunication.wait_notify_insert_test;
+package Inter_threadCommunication.waitAndNotify.wait_notify_insert_test;
 
 /**
  * Created by xianpeng.xia
