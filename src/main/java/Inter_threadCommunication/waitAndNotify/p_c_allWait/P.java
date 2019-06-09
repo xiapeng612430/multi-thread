@@ -25,7 +25,7 @@ public class P {
                 System.out.println("生产者: " + Thread.currentThread().getName() + " RUNNABLE *");
                 String value = System.currentTimeMillis() + "+" + System.nanoTime();
                 ValueObject.value = value;
-                lock.notify();
+                lock.notifyAll();
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
