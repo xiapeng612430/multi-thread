@@ -13,7 +13,7 @@ public class MyStack {
 
     synchronized public void push() {
         try {
-            if (list.size() == 1) {
+            while (list.size() == 1) {
                 this.wait();
             }
             list.add("anyString = " + Math.random());
