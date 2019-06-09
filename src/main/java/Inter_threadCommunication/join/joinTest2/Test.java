@@ -11,7 +11,7 @@ public class Test {
             MyThread threadTest = new MyThread();
             threadTest.start();
             threadTest.join();
-            System.out.println("我想等 threadTest 执行完执行 ,我做到了");
+            System.out.println("我想等 threadTest 执行完执行 ,我做到了 ");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
