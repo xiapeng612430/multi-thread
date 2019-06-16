@@ -9,7 +9,7 @@ import java.util.TimerTask;
  * Created by xianpeng.xia
  * on 2019-06-16 21:16
  */
-public class test1 {
+public class Test1 {
 
     static class MyTask extends TimerTask {
 
