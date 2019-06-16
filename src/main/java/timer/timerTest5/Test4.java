@@ -24,7 +24,7 @@ public class Test4 {
     }
 
     public static void main(String[] args) {
-        Test3.MyTask task = new Test3.MyTask();
+        MyTask task = new MyTask();
         System.out.println("now   timer = " + System.currentTimeMillis());
         Timer timer = new Timer();
         timer.schedule(task, 3000, 2000);

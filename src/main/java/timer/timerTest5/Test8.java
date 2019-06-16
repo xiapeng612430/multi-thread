@@ -5,17 +5,16 @@ import java.util.TimerTask;
 
 /**
  * Created by xianpeng.xia
- * on 2019-06-16 22:01
+ * on 2019-06-16 22:05
  */
-public class Test6 {
-
+public class Test8 {
     static class MyTask extends TimerTask {
 
         @Override
         public void run() {
             try {
                 System.out.println("begin timer = " + System.currentTimeMillis());
-                Thread.sleep(1000);
+                Thread.sleep(5000);
                 System.out.println("end   timer = " + System.currentTimeMillis());
             } catch (InterruptedException e) {
                 e.printStackTrace();
