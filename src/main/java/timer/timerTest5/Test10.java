@@ -7,9 +7,9 @@ import java.util.TimerTask;
 
 /**
  * Created by xianpeng.xia
- * on 2019-06-16 22:07
+ * on 2019-06-16 22:14
  */
-public class Test9 {
+public class Test10 {
 
     static class MyTask extends TimerTask {
 
@@ -28,6 +28,6 @@ public class Test9 {
         Date runDate = calendarRef.getTime();
         System.out.println("schedule timer = " + runDate);
         Timer timer = new Timer();
-        timer.schedule(task, runDate, 2000);
+        timer.scheduleAtFixedRate(task, runDate, 2000);
     }
 }
