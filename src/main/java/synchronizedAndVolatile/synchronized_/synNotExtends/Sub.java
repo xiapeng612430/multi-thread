@@ -7,7 +7,7 @@ package synchronizedAndVolatile.synchronized_.synNotExtends;
 public class Sub extends Main {
 
     @Override
-    public  void serviceMethod() {
+    public void serviceMethod() {
         try {
             System.out.println("in sub 下一步 sleep begin threadName = " + Thread.currentThread().getName() + " time = " + System.currentTimeMillis());
             Thread.sleep(5000);

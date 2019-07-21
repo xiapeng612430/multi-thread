@@ -15,7 +15,7 @@ public class Service {
         try {
             if (lock.tryLock(3, TimeUnit.SECONDS)) {
                 System.out.println(" " + Thread.currentThread().getName() + " get lock time = " + System.currentTimeMillis());
-            Thread.sleep(10000);
+                Thread.sleep(10000);
             } else {
                 System.out.println(" " + Thread.currentThread().getName() + " not get lock");
             }

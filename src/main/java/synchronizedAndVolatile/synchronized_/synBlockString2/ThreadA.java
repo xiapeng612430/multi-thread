@@ -5,7 +5,8 @@ package synchronizedAndVolatile.synchronized_.synBlockString2;
  * on 2019-06-08 11:42
  */
 public class ThreadA extends Thread {
-private Service service;
+
+    private Service service;
 
     public ThreadA(Service service) {
         super();

@@ -13,7 +13,7 @@ public class Run {
             Thread.sleep(1000);
             thread.suspend();
             System.out.println("main end");
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }

@@ -10,7 +10,7 @@ public class Test2 {
         try {
             String lock = new String();
             System.out.println("before syn");
-            synchronized (lock){
+            synchronized (lock) {
                 System.out.println("first row in syn");
                 lock.wait();
                 System.out.println("after wait first row");

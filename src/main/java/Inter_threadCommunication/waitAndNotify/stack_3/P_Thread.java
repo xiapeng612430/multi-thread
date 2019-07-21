@@ -15,7 +15,7 @@ public class P_Thread extends Thread {
 
     @Override
     public void run() {
-        while (true){
+        while (true) {
             p.pushService();
         }
     }

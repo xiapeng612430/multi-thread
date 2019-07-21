@@ -16,8 +16,8 @@ public class Test1 {
         calendarRef.add(Calendar.SECOND, 10);
         Date runDate = calendarRef.getTime();
         System.out.println("schedule timer : " + runDate);
-        MyTask task  = new MyTask();
-        Timer timer  = new Timer();
-        timer.schedule(task,runDate,4000);
+        MyTask task = new MyTask();
+        Timer timer = new Timer();
+        timer.schedule(task, runDate, 4000);
     }
 }

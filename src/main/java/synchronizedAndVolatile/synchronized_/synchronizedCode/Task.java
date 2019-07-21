@@ -9,7 +9,7 @@ public class Task {
     private String getData1;
     private String getData2;
 
-    public  void doLongTimeTask() {
+    public void doLongTimeTask() {
         try {
             System.out.println("begin task");
             Thread.sleep(3000);

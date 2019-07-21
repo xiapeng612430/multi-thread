@@ -16,6 +16,6 @@ public class MyThread1 extends Thread {
     @Override
     public void run() {
         MyService myservice = new MyService();
-        myservice.addServiceMethod(list,"A");
+        myservice.addServiceMethod(list, "A");
     }
 }

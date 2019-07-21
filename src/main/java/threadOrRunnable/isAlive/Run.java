@@ -11,6 +11,6 @@ public class Run {
         System.out.println("begin == " + myThread.isAlive());
         myThread.start();
         Thread.sleep(1000);
-        System.out.println("end == "+myThread.isAlive());
+        System.out.println("end == " + myThread.isAlive());
     }
 }

@@ -19,7 +19,7 @@ public class Service {
             for (int i = 0; i < Integer.MAX_VALUE / 10; i++) {
                 String str = new String();
                 Math.random();
-                System.out.println("lock :" + Thread.currentThread().getName() +" print " +i);
+                System.out.println("lock :" + Thread.currentThread().getName() + " print " + i);
             }
             System.out.println("lock end " + Thread.currentThread().getName());
         } finally {

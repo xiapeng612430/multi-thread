@@ -19,13 +19,13 @@ public class ThreadA extends Thread {
     @Override
     public void run() {
         try {
-            synchronized (b){
+            synchronized (b) {
                 System.out.println("begin A ThreadName = " + Thread.currentThread().getName() + " " + System.currentTimeMillis());
                 Thread.sleep(5000);
                 System.out.println("  end A ThreadName = " + Thread.currentThread().getName() + " " + System.currentTimeMillis());
             }
 
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }

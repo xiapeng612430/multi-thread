@@ -5,7 +5,8 @@ package lock.ConditionTestManyToMany;
  * on 2019-06-11 00:07
  */
 public class ThreadB extends Thread {
-private MyService service;
+
+    private MyService service;
 
     public ThreadB(MyService service) {
         super();

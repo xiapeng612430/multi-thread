@@ -5,7 +5,8 @@ package synchronizedAndVolatile.synchronized_.synchonized_this;
  * on 2019-06-08 11:04
  */
 public class MyThread2 extends Thread {
-private Task task;
+
+    private Task task;
 
     public MyThread2(Task task) {
         super();

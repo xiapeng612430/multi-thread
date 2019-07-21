@@ -5,7 +5,8 @@ package synchronizedAndVolatile.volatile_.synchronizedUpdateNewValue;
  * on 2019-06-08 22:40
  */
 public class ThreadB extends Thread {
-private Service service;
+
+    private Service service;
 
     public ThreadB(Service service) {
         super();

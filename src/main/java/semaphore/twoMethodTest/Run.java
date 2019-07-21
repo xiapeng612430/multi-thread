@@ -11,7 +11,7 @@ public class Run {
         MyThread firstThread = new MyThread(service);
         firstThread.start();
         MyThread[] threadArray = new MyThread[4];
-        for (int i = 0; i <4 ; i++) {
+        for (int i = 0; i < 4; i++) {
             threadArray[i] = new MyThread(service);
             threadArray[i].start();
         }

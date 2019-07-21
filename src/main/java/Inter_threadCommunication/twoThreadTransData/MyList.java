@@ -11,11 +11,11 @@ public class MyList {
 
     private List list = new ArrayList();
 
-    synchronized  public void add() {
+    synchronized public void add() {
         list.add("a");
     }
 
-    synchronized  public int size() {
+    synchronized public int size() {
         return list.size();
     }
 }

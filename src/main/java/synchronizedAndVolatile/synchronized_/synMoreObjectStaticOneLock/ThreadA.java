@@ -5,7 +5,8 @@ package synchronizedAndVolatile.synchronized_.synMoreObjectStaticOneLock;
  * on 2019-06-08 18:21
  */
 public class ThreadA extends Thread {
-private Service service;
+
+    private Service service;
 
     public ThreadA(Service service) {
         super();

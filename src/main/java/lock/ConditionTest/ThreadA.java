@@ -5,7 +5,8 @@ package lock.ConditionTest;
  * on 2019-06-11 00:07
  */
 public class ThreadA extends Thread {
-private MyService service;
+
+    private MyService service;
 
     public ThreadA(MyService service) {
         super();

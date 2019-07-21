@@ -18,7 +18,7 @@ public class ThreadA extends Thread {
     @Override
     public void run() {
         try {
-            System.out.println("thread A get value from thread B is : "+exchanger.exchange("person a"));
+            System.out.println("thread A get value from thread B is : " + exchanger.exchange("person a"));
             System.out.println("A end");
         } catch (InterruptedException e) {
             e.printStackTrace();

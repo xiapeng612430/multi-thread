@@ -13,7 +13,7 @@ public class Run {
             a.start();
             b.start();
             for (int i = 0; i < 100; i++) {
-                Tools.t1.set("Main - " + (i+1));
+                Tools.t1.set("Main - " + (i + 1));
                 System.out.println("main get value = " + Tools.t1.get());
                 Thread.sleep(200);
             }

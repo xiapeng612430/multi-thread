@@ -12,11 +12,11 @@ public class LoginServlet {
     synchronized public static void doPost(String username, String password) {
         try {
             usernameRef = username;
-            if(username.equals("a")){
+            if (username.equals("a")) {
                 Thread.sleep(5000);
             }
             passwordRef = password;
-            System.out.println("username : "+usernameRef+",password : " +passwordRef);
+            System.out.println("username : " + usernameRef + ",password : " + passwordRef);
 
         } catch (InterruptedException e) {
             e.printStackTrace();

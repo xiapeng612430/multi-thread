@@ -15,6 +15,6 @@ public class MyThread extends Thread {
     @Override
     public void run() {
         super.run();
-        synchrobnizedObject.printString("b","bb");
+        synchrobnizedObject.printString("b", "bb");
     }
 }

@@ -8,14 +8,14 @@ public class Run {
 
     public static void main(String[] args) {
         try {
-            Service service= new Service();
+            Service service = new Service();
             ThreadA a = new ThreadA(service);
             a.start();
             Thread.sleep(1000);
             ThreadB b = new ThreadB(service);
             b.start();
             System.out.println("has send stop");
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }

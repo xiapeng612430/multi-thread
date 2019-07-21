@@ -15,9 +15,9 @@ public class ReadData {
             char[] chars = new char[20];
             int readLength = input.read(chars);
             while (readLength != -1) {
-            String newData = new String(chars,0,readLength);
-            System.out.println(newData);
-            readLength = input.read(chars);
+                String newData = new String(chars, 0, readLength);
+                System.out.println(newData);
+                readLength = input.read(chars);
             }
             System.out.println();
             input.close();

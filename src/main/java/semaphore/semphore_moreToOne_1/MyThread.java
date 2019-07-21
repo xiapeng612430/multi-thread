@@ -5,7 +5,8 @@ package semaphore.semphore_moreToOne_1;
  * on 2019-07-21 01:06
  */
 public class MyThread extends Thread {
-private Service service;
+
+    private Service service;
 
     public MyThread(Service service) {
         super();

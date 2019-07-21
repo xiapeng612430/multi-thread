@@ -15,6 +15,6 @@ public class InheritableThreadLocalExt extends InheritableThreadLocal {
 
     @Override
     protected Object childValue(Object parentValue) {
-        return parentValue +" ～～～";
+        return parentValue + " ～～～";
     }
 }

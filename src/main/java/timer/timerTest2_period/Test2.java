@@ -15,9 +15,9 @@ public class Test2 {
         Calendar calendarRef = Calendar.getInstance();
         calendarRef.set(Calendar.SECOND, calendarRef.get(Calendar.SECOND) - 10);
         Date runDate = calendarRef.getTime();
-        System.out.println("schedule time : "+runDate);
+        System.out.println("schedule time : " + runDate);
         MyTask task = new MyTask();
         Timer timer = new Timer();
-        timer.schedule(task,runDate,4000);
+        timer.schedule(task, runDate, 4000);
     }
 }

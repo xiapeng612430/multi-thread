@@ -22,6 +22,6 @@ public class Run {
         MyTask task = new MyTask();
         Timer timer = new Timer();
         System.out.println("now          timer = " + new Date());
-        timer.schedule(task, 3000,5000);
+        timer.schedule(task, 3000, 5000);
     }
 }

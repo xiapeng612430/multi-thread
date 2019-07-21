@@ -5,7 +5,8 @@ package synchronizedAndVolatile.synchronized_.synBlockString;
  * on 2019-06-08 11:29
  */
 public class ThreadA extends Thread {
-private Service service;
+
+    private Service service;
 
     public ThreadA(Service service) {
         super();
@@ -14,6 +15,6 @@ private Service service;
 
     @Override
     public void run() {
-        service.setUsernamePassword("a","aa");
+        service.setUsernamePassword("a", "aa");
     }
 }

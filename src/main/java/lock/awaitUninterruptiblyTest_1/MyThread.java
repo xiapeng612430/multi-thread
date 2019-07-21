@@ -5,7 +5,8 @@ package lock.awaitUninterruptiblyTest_1;
  * on 2019-06-16 00:26
  */
 public class MyThread extends Thread {
-private Service service;
+
+    private Service service;
 
     public MyThread(Service service) {
         super();

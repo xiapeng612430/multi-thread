@@ -9,7 +9,8 @@ import java.util.concurrent.TimeoutException;
  * on 2019-07-21 02:56
  */
 public class ThreadB extends Thread {
-private Exchanger<String> exchanger;
+
+    private Exchanger<String> exchanger;
 
     public ThreadB(Exchanger<String> exchanger) {
         super();

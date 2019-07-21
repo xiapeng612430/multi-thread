@@ -30,6 +30,6 @@ public class Test3 {
         Calendar calendarRef = Calendar.getInstance();
         Date runDate = calendarRef.getTime();
         Timer timer = new Timer();
-        timer.schedule(task,runDate,2000);
+        timer.schedule(task, runDate, 2000);
     }
 }

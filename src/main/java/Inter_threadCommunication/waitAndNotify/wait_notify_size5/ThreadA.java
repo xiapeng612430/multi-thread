@@ -18,11 +18,11 @@ public class ThreadA extends Thread {
             synchronized (lock) {
                 for (int i = 0; i < 10; i++) {
                     MyList.add();
-                    if (MyList.size() == 5){
+                    if (MyList.size() == 5) {
                         lock.notify();
                         System.out.println("send notify");
                     }
-                    System.out.println("added "+(i+1)+" elements");
+                    System.out.println("added " + (i + 1) + " elements");
                     Thread.sleep(1000);
                 }
             }

@@ -7,6 +7,7 @@ package synchronizedAndVolatile.volatile_.atomicIntegerNotSafe;
 public class MyThread extends Thread {
 
     private MyService myService;
+
     public MyThread(MyService myService) {
         super();
         this.myService = myService;

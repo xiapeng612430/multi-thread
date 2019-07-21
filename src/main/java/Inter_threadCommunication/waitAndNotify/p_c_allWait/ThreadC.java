@@ -15,7 +15,7 @@ public class ThreadC extends Thread {
 
     @Override
     public void run() {
-        while (true){
+        while (true) {
             c.getValue();
         }
     }

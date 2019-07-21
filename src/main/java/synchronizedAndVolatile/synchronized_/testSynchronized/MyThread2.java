@@ -7,10 +7,11 @@ import synchronizedAndVolatile.synchronized_.selfPrivate.ThreadB;
  * on 2019-06-08 09:54
  */
 public class MyThread2 extends Thread {
-private MyTask task;
+
+    private MyTask task;
 
     public MyThread2(MyTask task) {
-       super();
+        super();
         this.task = task;
     }
 
