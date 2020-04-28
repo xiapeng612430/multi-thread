@@ -16,6 +16,7 @@ public class Run {
             threads[i].setName("thread-" + (i + 1));
             threads[i].start();
         }
+        // 直到计数器变为0才向下执行
         maxRuner.await();
         System.out.println("all return");
     }

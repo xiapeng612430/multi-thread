@@ -13,6 +13,7 @@ public class MyService {
     public void testMethod() {
         try {
             System.out.println("A");
+            // 直到计数器变为0才向下执行执行
             countDownLatch.await();
             System.out.println("B");
         } catch (InterruptedException e) {
