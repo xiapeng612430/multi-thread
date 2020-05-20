@@ -16,12 +16,12 @@ public class Run {
     public static void main(String[] args) {
         try {
             UserInfo userInfo = new UserInfo();
-            MyRunable myRunable = new MyRunable(userInfo);
+            MyRunnable myRunnable = new MyRunnable(userInfo);
 
             ExecutorService executorService = Executors.newCachedThreadPool();
             CompletionService completionService = new ExecutorCompletionService(executorService);
 
-            Future<UserInfo> future = completionService.submit(myRunable, userInfo);
+            Future<UserInfo> future = completionService.submit(myRunnable, userInfo);
 
             System.out.println(future.get().getUsername() + "  " + future.get().getPassword());
         } catch (InterruptedException e) {
