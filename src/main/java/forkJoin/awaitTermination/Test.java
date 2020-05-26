@@ -1,0 +1,20 @@
+package forkJoin.awaitTermination;
+
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.TimeUnit;
+
+/**
+ * @date 2020/05/26
+ * @time 17:18
+ */
+public class Test {
+
+    public static void main(String[] args) throws InterruptedException {
+        MyRunnableA myRunnableA = new MyRunnableA();
+        ForkJoinPool forkJoinPool = new ForkJoinPool();
+        forkJoinPool.execute(myRunnableA);
+        System.out.println("run begin " + System.currentTimeMillis());
+        System.out.println(forkJoinPool.awaitTermination(10, TimeUnit.SECONDS));
+        System.out.println("run   end " + System.currentTimeMillis());
+    }
+}
