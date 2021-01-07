@@ -40,6 +40,7 @@ class ServiceC {
     void process() {
         User user = UserContextHolder.threadLocalUser.get();
         System.out.println("C user : " + user);
+        UserContextHolder.threadLocalUser.remove();
     }
 }
 
