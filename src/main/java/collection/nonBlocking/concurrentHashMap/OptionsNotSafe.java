@@ -13,9 +13,14 @@ public class OptionsNotSafe implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i < 1000; i++) {
-            Integer oldScore = scores.get("A");
-            Integer newScore = oldScore + 1;
-            scores.put("A", newScore);
+            while (true) {
+                Integer oldScore = scores.get("A");
+                Integer newScore = oldScore + 1;
+                boolean b = scores.replace("A", oldScore, newScore);
+                if (b) {
+                    break;
+                }
+            }
         }
     }
 
