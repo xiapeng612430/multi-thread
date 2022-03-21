@@ -22,9 +22,9 @@ public class Consumer implements Runnable {
             // 如果队列里已经没有产品了，消费者也无法继续消费；
             while (queue.isEmpty()) {
                 try {
-                    System.out.printf("消费者 " + Thread.currentThread().getName() + " 等待中... Queue 已缺货，无法消费");
+                    System.out.println("消费者 " + Thread.currentThread().getName() + " 等待中... Queue 已缺货，无法消费");
                     queue.wait();
-                    System.out.printf("消费者 " + Thread.currentThread().getName() + " 退出等待");
+                    System.out.println("消费者 " + Thread.currentThread().getName() + " 退出等待");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -34,7 +34,7 @@ public class Consumer implements Runnable {
                 queue.notifyAll();
             }
             Product product = queue.poll();
-            System.out.printf("消费者 " + Thread.currentThread().getName() + " 消费了 " + product.getName());
+            System.out.println("消费者 " + Thread.currentThread().getName() + " 消费了 " + product.getName());
         }
     }
 }

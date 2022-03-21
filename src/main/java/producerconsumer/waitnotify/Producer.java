@@ -36,9 +36,9 @@ public class Producer implements Runnable {
             // 如果队列里的产品已经满了，生产者就不能继续生产；
             while (queue.size() == maxCapacity) {
                 try {
-                    System.out.printf("生产者" + Thread.currentThread().getName() + " 等待中....Queue 已达到最大容量，无法生产");
+                    System.out.println("生产者" + Thread.currentThread().getName() + " 等待中....Queue 已达到最大容量，无法生产");
                     queue.wait();
-                    System.out.printf("生产者" + Thread.currentThread().getName() + " 退出等待");
+                    System.out.println("生产者" + Thread.currentThread().getName() + " 退出等待");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -52,7 +52,7 @@ public class Producer implements Runnable {
             Integer i = random.nextInt();
             queue.offer(new Product("产品" + i));
 
-            System.out.printf("生产者" + Thread.currentThread().getName() + " 生产了 " + i.toString());
+            System.out.println("生产者" + Thread.currentThread().getName() + " 生产了 " + i.toString());
         }
     }
 
